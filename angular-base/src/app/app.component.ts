@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'first angular-base';
-  name = 'pale-cinder';
+  // name = 'pale-cinder';
 }
