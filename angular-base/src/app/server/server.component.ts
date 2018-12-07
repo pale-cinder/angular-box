@@ -1,5 +1,6 @@
 // import the .../core is important
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component ({
     selector: 'app-server',
