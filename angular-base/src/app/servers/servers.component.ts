@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = 'No server was created';
-  serverName = '';
+  serverName = 'testserver';
 
   constructor() { 
     setTimeout(() => {
