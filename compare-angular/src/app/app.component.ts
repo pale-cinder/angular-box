@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component({ // component decorator
+  // series of properties that configure this given component
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  templateUrl: './app.component.html', // external html properties
+  styleUrls: ['./app.component.sass']  // external styles properties
 })
-export class AppComponent {
+export class AppComponent { // this is where all the logic goes (dependency injections, methods)
   title = 'compare-angular';
 }
