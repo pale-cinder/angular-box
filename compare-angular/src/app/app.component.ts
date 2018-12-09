@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']  // external styles properties
 })
 export class AppComponent { // this is where all the logic goes (dependency injections, methods)
-  title = 'compare-angular';
+  toggleNav=false;
 }
