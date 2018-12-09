@@ -1,4 +1,36 @@
-Header
+<div class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a routerLink="/" class="nav-item">MyCompany</a>
+    </div>
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <div class="nav-right nav-menu">
+
+      <a routerLink="/" class="nav-item r-item">Home</a>
+      <a class="nav-item r-item">About</a>
+      <a class="nav-item r-item">Features</a>
+      <a routerLink="/faq" class="nav-item r-item">FAQ</a>
+
+        <div class="nav-item">
+          <p class="control">
+            <a class="button is-primary is-outlined">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+              <span>Join Now</span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+  </div>
+</div>
+
 
 <!-- this is where HomeComponent and FaqComponent will be placed -->
 <router-outlet></router-outlet>
