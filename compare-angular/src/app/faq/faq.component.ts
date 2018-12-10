@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class FaqComponent implements OnInit {
   
   faqs: Array<any>;
- private results: Observable<faqs[]>;
+ private results: Observable<faqs>;
 
   constructor(private http: HttpClient) { 
     this.http.get('http://jsonplaceholder.typicode.com/posts')
