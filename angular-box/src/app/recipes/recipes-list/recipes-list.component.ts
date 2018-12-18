@@ -1,6 +1,6 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Recipe } from '../recipe.model';
-import { EventEmitter } from 'events';
+//import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-recipes-list',
