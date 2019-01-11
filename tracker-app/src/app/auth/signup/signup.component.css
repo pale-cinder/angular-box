@@ -1,0 +1,26 @@
+#container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.child {
+    width: 20rem;
+    height: 20rem;
+    /* flex: 1; */
+}
+
+#child1 {
+    background-color: red;
+    /* flex: 2; */
+}
+
+#child2 {
+    background-color: gray;
+    /* flex: 3; */
+}
+
+#child3 {
+    background-color: blue;
+    /* flex: 4; */
+}
