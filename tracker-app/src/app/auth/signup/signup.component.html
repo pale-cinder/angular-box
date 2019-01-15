@@ -26,6 +26,8 @@
     </mat-form-field>
     <mat-form-field>
       <input matInput placeholder="Your Birthday">
+      <mat-datepicker-toggle [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
     <button type="submit" mat-raised-button color="primary">Submit</button>
   </form>
