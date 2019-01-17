@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //title = 'tracker-app';
-  openSidenav = false;
+  //openSidenav = false;
+  //@ViewChild('sidenav')
+  //onToggle() {
+  //}
 }
