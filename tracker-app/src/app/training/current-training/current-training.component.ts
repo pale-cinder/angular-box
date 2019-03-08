@@ -21,12 +21,14 @@ export class CurrentTrainingComponent implements OnInit {
       if (this.progress >= 100) {
         clearInterval(this.timer);
       }
-    }, 1000)
+    }, 1000);
   }
 
   onStop() {
     clearInterval(this.timer);
-    this.dialog.open(StopTrainingComponent);
+    this.dialog.open(StopTrainingComponent, {data: {
+      progress: this.progress
+    }});
   }
 
 }
