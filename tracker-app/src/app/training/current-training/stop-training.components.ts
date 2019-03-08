@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+//storing random data or id
+import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
     selector: 'app-stop-training',
     template: `<h1 mat-dialog-title>Are you sure?</h1>
                 <mat-dialog-content>
-                    <p>You got {{ progress }}% already</p>
+                    <p>You got {{ passedData.progress }}% already</p>
                 </mat-dialog-content>
                 <mat-dialog-actions>
                     <button mat-button [mat-dialog-close]="true">Yes</button>
@@ -13,5 +15,5 @@ import { Component } from '@angular/core';
 })
 
 export class StopTrainingComponent {
-
+    constructor(@Inject(MAT_DIALOG_DATA) public passedData: any) {}
 }
