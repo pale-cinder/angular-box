@@ -26,4 +26,8 @@ export class AuthService {
     getUser() {
         return { ...this.user };
     }
+
+    isAuth() {
+        return this.user != null;
+    }
 }
