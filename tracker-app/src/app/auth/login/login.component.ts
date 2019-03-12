@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
       email: new FormControl('', {
         validators: [Validators.required, Validators.email]
       }),
-      password: new FormControl('', { validators: [Validators.required, Validators.password]
+      password: new FormControl('', { validators: [Validators.required]
       }),
     });
   }
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.authService.login({
       email: this.loginForm.value.email,
-      passwword: this.loginForm.value.password
+      password: this.loginForm.value.password
     });
   }
 }

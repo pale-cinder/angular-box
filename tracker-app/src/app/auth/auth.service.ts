@@ -1,8 +1,14 @@
+import { Subject } from 'rxjs/Subject';
+
 import { User } from './user.model';
 import { AuthData } from './auth-data.model';
+import { from } from 'rxjs';
 
 export class AuthService {
     //to fake a user login and inform the other parts about the user login
+    
+    authChange = new Subject<boolean>();
+
     private user: User;
 
     registerUser(authData: AuthData) {
@@ -10,6 +16,7 @@ export class AuthService {
             email: authData.email,
             userId: Math.round(Math.random() * 10000).toString()
         };
+        this.authChange.next(true);
     }
 
     login(authData: AuthData) {
@@ -17,10 +24,12 @@ export class AuthService {
             email: authData.email,
             userId: Math.round(Math.random() * 10000).toString()
         };
+        this.authChange.next(true);
     }
 
     logout() {
         this.user = null;
+        this.authChange.next(false);
     }
 
     getUser() {
